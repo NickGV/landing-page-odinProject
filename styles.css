@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #1b0045;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+nav img {
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav-link {
+    font-weight: 500;
+    letter-spacing: 2px;
+    &:hover {
+        cursor: pointer;
+        color: #6a5198;
+    }
+}
+
+.main {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-image: url(./imgs/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position: center right;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.main__title {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.offer {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    background-color: #330086;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.5);
+    padding: 1em;
+    & .offer__title {
+        font-size: 2em;
+    }
+
+    & .tecnologies {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1em;
+        gap: 10px;
+
+        > i {
+            font-size: 2em;
+            border-radius: 50%;
+            border: 1px solid white;
+            padding: 10px;
+            box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: #8004ff;
+            }
+        }
+    }
+
+    & .sing-up-button {
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+        background-color: #8004ff;
+        color: white;
+        font-size: 2em;
+        height: 50px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
